@@ -13,6 +13,7 @@ double defaultPadding = 20.0;
 
 // set color
 Color navyColor = Color(0xff39004B);
+Color blueColor = Color(0xff4044C9);
 Color redColor = Color(0xffFF686D);
 Color yellowColor = Color(0xffFFE8AD);
 Color whiteColor = Color(0xffFFFFFF);
