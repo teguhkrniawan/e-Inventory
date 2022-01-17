@@ -4,12 +4,20 @@
  * menu-menu utama
  */
 
+import 'package:e_inventory/pages/contents/home_page.dart';
 import 'package:e_inventory/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MenuParentPage extends StatelessWidget {
+class MenuParentPage extends StatefulWidget {
+  @override
+  State<MenuParentPage> createState() => _MenuParentPageState();
+}
 
+class _MenuParentPageState extends State<MenuParentPage> {
+
+
+  int _currentPage = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +49,12 @@ class MenuParentPage extends StatelessWidget {
           child: BottomNavigationBar(
             backgroundColor: navyColor,
             type: BottomNavigationBarType.fixed,
-            onTap: (value){},
+            currentIndex: _currentPage,
+            onTap: (value){
+              setState(() {
+                _currentPage = value;
+              });
+            },
             items: [
               BottomNavigationBarItem(
                 icon: Container(
@@ -77,13 +90,24 @@ class MenuParentPage extends StatelessWidget {
       );
     }
 
+    // widget kondisional body apabila bottom navigation di klik
+    Widget body(){
+      switch (_currentPage) {
+        case 0:
+          return HomePage();
+          break;
+        default:
+          return HomePage();
+      }
+    }
+
     return Scaffold(
       backgroundColor: whiteColor,
       floatingActionButton: penjualanFLoatingBtn(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: customNavBottom(),
       body: SafeArea(
-        child: Center(),
+        child: body(),
       )
     );
   }

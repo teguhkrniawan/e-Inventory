@@ -18,6 +18,7 @@ Color redColor = Color(0xffFF686D);
 Color yellowColor = Color(0xffFFE8AD);
 Color whiteColor = Color(0xffFFFFFF);
 Color greyColor = Color(0xffA1A1A1);
+Color greyColor2 = Color(0xffF2F2F2);
 Color blackColor = Color(0xff111111);
 
 // set style fonts
@@ -32,6 +33,9 @@ TextStyle thirdTextStyle = GoogleFonts.poppins(
 );
 TextStyle whiteTextStyle = GoogleFonts.poppins(
   color: whiteColor
+);
+TextStyle blueTextStyle = GoogleFonts.poppins(
+  color: blueColor
 );
 
 // set weight of fonts
