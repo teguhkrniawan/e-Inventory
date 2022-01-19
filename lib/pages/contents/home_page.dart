@@ -32,12 +32,17 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              width: 54,
-              height: 54,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(image: AssetImage('assets/avatar.PNG'))
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, '/profile');
+              },
+              child: Container(
+                width: 54,
+                height: 54,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(image: AssetImage('assets/avatar.PNG'))
+                ),
               ),
             )
           ],
