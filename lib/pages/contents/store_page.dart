@@ -1,3 +1,4 @@
+import 'package:e_inventory/pages/products/product_master_page.dart';
 import 'package:e_inventory/pages/stores/master_material_page.dart';
 import 'package:e_inventory/theme.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _StorePageState extends State<StorePage> with SingleTickerProviderStateMix
         body: TabBarView(
           children: [
             MasterMaterialPage(),
-            Center(child: Text('Ini tab 2'),),
+            ProductMasterPage(),
             Center(child: Text('Ini tab 3'),)
           ],
         ),

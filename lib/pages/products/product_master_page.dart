@@ -1,14 +1,14 @@
 import 'package:e_inventory/helper/my_dummy.dart';
-import 'package:e_inventory/theme.dart';
-import 'package:e_inventory/widgets/ingerediants_list.dart';
+import 'package:e_inventory/widgets/product_cake_list.dart';
 import 'package:flutter/material.dart';
+import 'package:e_inventory/theme.dart';
 
-class MasterMaterialPage extends StatelessWidget {
+class ProductMasterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
 
-    // label
+    // header
     Widget header(){
       return Container(
         margin: EdgeInsets.only(
@@ -23,11 +23,11 @@ class MasterMaterialPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Total Material', style: primaryTextStyle.copyWith(
+                Text('Total Produk Kamu', style: primaryTextStyle.copyWith(
                   fontSize: 18,
                   fontWeight: semibold
                 )),
-                Text('4 Materials', style: secondaryTextStyle.copyWith(
+                Text('17 Cake', style: secondaryTextStyle.copyWith(
                   fontSize: 14,
                   fontWeight: reguler
                 ),)
@@ -50,18 +50,19 @@ class MasterMaterialPage extends StatelessWidget {
       );
     }
 
+
     return ListView(
       children: [
-        header(),
-         Container(
-          margin: EdgeInsets.symmetric(
-            horizontal: defaultMargin,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: getIngrediants().map((ingrediants) => MaterialProductPage(ingrediants: ingrediants,)).toList()
-          ),
-        )
+          header(),
+          Container(
+            margin: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+                 children: getOrderList().map((produk) => ProductCakeList(produk: produk,)).toList()
+            )
+          )
       ],
     );
   }

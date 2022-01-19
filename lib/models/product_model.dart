@@ -10,7 +10,5 @@ class ProductModel {
     this.qty,
     this.img
   });
-
   
-
 }
