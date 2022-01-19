@@ -5,6 +5,7 @@
  */
 
 import 'package:e_inventory/pages/contents/home_page.dart';
+import 'package:e_inventory/pages/contents/store_page.dart';
 import 'package:e_inventory/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -25,7 +26,9 @@ class _MenuParentPageState extends State<MenuParentPage> {
     // floating action button
     Widget penjualanFLoatingBtn(){
       return FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.pushNamed(context, '/store');
+        },
         backgroundColor: blueColor,
         child: SvgPicture.asset(
           'assets/icon_store.svg',
@@ -96,6 +99,9 @@ class _MenuParentPageState extends State<MenuParentPage> {
         case 0:
           return HomePage();
           break;
+        case 1:
+          return HomePage();
+          break;  
         default:
           return HomePage();
       }
