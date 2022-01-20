@@ -33,16 +33,21 @@ class MasterMaterialPage extends StatelessWidget {
                 ),)
               ],
             ),
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: redColor,
-                borderRadius: BorderRadius.circular(8)
-              ),
-              child: Icon(
-                Icons.add,
-                color: Colors.white
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, '/add-material');
+              },
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: redColor,
+                  borderRadius: BorderRadius.circular(8)
+                ),
+                child: Icon(
+                  Icons.add,
+                  color: Colors.white
+                ),
               ),
             )
           ],

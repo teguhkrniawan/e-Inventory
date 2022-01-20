@@ -1,4 +1,4 @@
-import 'package:e_inventory/pages/products/product_master_page.dart';
+import 'package:e_inventory/pages/stores/product_master_page.dart';
 import 'package:e_inventory/pages/stores/master_material_page.dart';
 import 'package:e_inventory/theme.dart';
 import 'package:flutter/material.dart';
