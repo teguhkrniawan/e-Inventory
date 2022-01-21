@@ -1,3 +1,4 @@
+import 'package:e_inventory/pages/stores/mrp_page.dart';
 import 'package:e_inventory/pages/stores/product_master_page.dart';
 import 'package:e_inventory/pages/stores/master_material_page.dart';
 import 'package:e_inventory/theme.dart';
@@ -32,7 +33,7 @@ class _StorePageState extends State<StorePage> with SingleTickerProviderStateMix
           children: [
             MasterMaterialPage(),
             ProductMasterPage(),
-            Center(child: Text('Ini tab 3'),)
+            MrpPage(),
           ],
         ),
       )

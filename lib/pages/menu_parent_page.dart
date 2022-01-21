@@ -6,6 +6,7 @@
 
 import 'package:e_inventory/pages/contents/home_page.dart';
 import 'package:e_inventory/pages/contents/store_page.dart';
+import 'package:e_inventory/pages/contents/transaction_page.dart';
 import 'package:e_inventory/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -100,7 +101,7 @@ class _MenuParentPageState extends State<MenuParentPage> {
           return HomePage();
           break;
         case 1:
-          return HomePage();
+          return TransactionPage();
           break;  
         default:
           return HomePage();

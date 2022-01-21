@@ -1,4 +1,5 @@
 import 'package:e_inventory/models/product_model.dart';
+import 'package:e_inventory/pages/stores/mrp_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:e_inventory/theme.dart';
 
@@ -45,7 +46,7 @@ class ProductCakeList extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: medium
                 ),),
-                Text('Rp. 165.000', style: secondaryTextStyle.copyWith(
+                Text('Stok : ${produk.qty}', style: secondaryTextStyle.copyWith(
                   fontWeight: bold
                 ),)
               ],
