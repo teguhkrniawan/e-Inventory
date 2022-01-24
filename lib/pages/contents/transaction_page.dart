@@ -16,8 +16,9 @@ class _TransactionPageState extends State<TransactionPage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: blueColor,
-          title: Text('Store Inventory'),
-          centerTitle: false,
+          title: Text('Transactions'),
+          centerTitle: true,
+          automaticallyImplyLeading: false,
           bottom: TabBar(
             tabs: [
               Tab(text: 'Penjualan',),

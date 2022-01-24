@@ -7,6 +7,8 @@ import 'package:e_inventory/pages/splash_page.dart';
 import 'package:e_inventory/pages/stores/add_material_page.dart';
 import 'package:e_inventory/pages/stores/add_product_page.dart';
 import 'package:e_inventory/pages/stores/mrp_detail_page.dart';
+import 'package:e_inventory/pages/transactions/add_pembelian_page.dart';
+import 'package:e_inventory/pages/transactions/add_penjualan_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         '/add-product' : (context) => AddProductPage(),
         '/transactions' : (context) => TransactionPage(),
         '/detail-mrp' : (context) => DetailMrpPage(),
+        '/add-pembelian' : (context) => AddPembelianPage(),
+        '/add-penjualan' : (context) => AddPenjualanPage(),
       },
     );
   }
