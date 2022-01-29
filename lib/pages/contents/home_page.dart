@@ -52,157 +52,82 @@ class HomePage extends StatelessWidget {
 
     // widget tanggal 
     Widget tanggal(){
-      return Container(
-        margin: EdgeInsetsDirectional.only(
-          top: defaultMargin
-        ),
-        child: Row(
-          children: [
-            SizedBox(
-              width: defaultMargin,
-            ),
-            Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
+      return Center(
+        child: Container(
+          margin: EdgeInsetsDirectional.only(
+            top: defaultMargin
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 90,
+                margin: EdgeInsets.only(
+                  right: 16
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: blueColor
-              ),
-              child: Column(
-                children: [
-                  Text('17', style: whiteTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: whiteTextStyle,)
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
+                padding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10
+                  ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: whiteColor,
+                  border: Border.all(
+                    color: blueColor
+                  )
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: whiteColor,
-                border: Border.all(
+                child: Column(
+                  children: [
+                    Icon(Icons.skip_previous, color: blueColor,),
+                    Text('Kemarin', style: blueTextStyle,)
+                  ],
+                ),
+              ),
+              Container(
+                width: 90,
+                margin: EdgeInsets.only(
+                  right: 16
+                ),
+                padding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10
+                  ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
                   color: blueColor
-                )
-              ),
-              child: Column(
-                children: [
-                  Text('18', style: blueTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: blueTextStyle,)
-                ],
-              ),
-            ),
-             Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: whiteColor,
-                border: Border.all(
-                  color: blueColor
-                )
-              ),
-              child: Column(
-                children: [
-                  Text('19', style: blueTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: blueTextStyle,)
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
+                child: Column(
+                  children: [
+                    Icon(Icons.today, color: whiteColor,),
+                    Text('Hari ini', style: whiteTextStyle,)
+                  ],
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: whiteColor,
-                border: Border.all(
-                  color: blueColor
-                )
               ),
-              child: Column(
-                children: [
-                  Text('20', style: blueTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: blueTextStyle,)
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
+              Container(
+                width: 90,
+                margin: EdgeInsets.only(
+                  right: 16
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: whiteColor,
-                border: Border.all(
-                  color: blueColor
-                )
-              ),
-              child: Column(
-                children: [
-                  Text('21', style: blueTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: blueTextStyle,)
-                ],
-              ),
-            ),
-             Container(
-              margin: EdgeInsets.only(
-                right: 16
-              ),
-              padding: EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10
+                padding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 10
+                  ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: whiteColor,
+                  border: Border.all(
+                    color: blueColor
+                  )
                 ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: whiteColor,
-                border: Border.all(
-                  color: blueColor
-                )
+                child: Column(
+                  children: [
+                    Icon(Icons.skip_next, color: blueColor,),
+                    Text('Besok', style: blueTextStyle,)
+                  ],
+                ),
               ),
-              child: Column(
-                children: [
-                  Text('22', style: blueTextStyle.copyWith(
-                    fontSize: 18
-                  ),),
-                  Text('Jan', style: blueTextStyle,)
-                ],
-              ),
-            )
-          ],
+            ],
+          ),
         ),
       );
     }
@@ -216,7 +141,7 @@ class HomePage extends StatelessWidget {
            right: defaultMargin
         ),
         child: Text(
-          'Pre Ordered', style: primaryTextStyle.copyWith(
+          'Produksi Hari Ini', style: primaryTextStyle.copyWith(
             fontSize: 16,
             fontWeight: semibold
           )
